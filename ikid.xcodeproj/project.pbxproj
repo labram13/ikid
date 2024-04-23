@@ -16,6 +16,8 @@
 		1F352E292BD77B9300BAA88B /* ikidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F352E282BD77B9300BAA88B /* ikidTests.swift */; };
 		1F352E332BD77B9300BAA88B /* ikidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F352E322BD77B9300BAA88B /* ikidUITests.swift */; };
 		1F352E352BD77B9300BAA88B /* ikidUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F352E342BD77B9300BAA88B /* ikidUITestsLaunchTests.swift */; };
+		1FF626442BD79E5D00804EBB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF626432BD79E5D00804EBB /* FirstViewController.swift */; };
+		1FF626462BD79EF000804EBB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF626452BD79EF000804EBB /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1F352E2E2BD77B9300BAA88B /* ikidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ikidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F352E322BD77B9300BAA88B /* ikidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikidUITests.swift; sourceTree = "<group>"; };
 		1F352E342BD77B9300BAA88B /* ikidUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikidUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FF626432BD79E5D00804EBB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		1FF626452BD79EF000804EBB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				1F352E112BD77B9200BAA88B /* AppDelegate.swift */,
 				1F352E132BD77B9200BAA88B /* SceneDelegate.swift */,
 				1F352E152BD77B9200BAA88B /* ViewController.swift */,
+				1FF626432BD79E5D00804EBB /* FirstViewController.swift */,
+				1FF626452BD79EF000804EBB /* SecondViewController.swift */,
 				1F352E172BD77B9200BAA88B /* Main.storyboard */,
 				1F352E1A2BD77B9300BAA88B /* Assets.xcassets */,
 				1F352E1C2BD77B9300BAA88B /* LaunchScreen.storyboard */,
@@ -261,6 +267,8 @@
 				1F352E162BD77B9200BAA88B /* ViewController.swift in Sources */,
 				1F352E122BD77B9200BAA88B /* AppDelegate.swift in Sources */,
 				1F352E142BD77B9200BAA88B /* SceneDelegate.swift in Sources */,
+				1FF626462BD79EF000804EBB /* SecondViewController.swift in Sources */,
+				1FF626442BD79E5D00804EBB /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
