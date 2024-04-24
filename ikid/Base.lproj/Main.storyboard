@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rmh-Mh-aVf">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,32 @@
             <objects>
                 <viewController storyboardIdentifier="Good Joke" title="Good Joke" id="xyh-nC-1l8" customClass="GoodJokeController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J6G-f3-dYE">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAj-Gq-FHC">
-                                <rect key="frame" x="71" y="331" width="288" height="270"/>
+                                <rect key="frame" x="60" y="155" width="690" height="770"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="5wF-I1-rC3"/>
                                     <constraint firstAttribute="width" constant="528" id="DTT-of-vMT"/>
+                                    <constraint firstAttribute="width" constant="690" id="Egj-gg-1cO"/>
                                     <constraint firstAttribute="height" constant="270" id="YVj-CO-KkC"/>
+                                    <constraint firstAttribute="height" constant="770" id="fZB-Sk-xdh"/>
                                     <constraint firstAttribute="width" constant="288" id="ofX-TA-psM"/>
                                 </constraints>
-                                <mutableString key="text">Sherlock Holmes and Dr Watson were going camping. They pitched their tent under the stars and went to sleep. Sometime in the middle of the night Holmes woke Watson up and said: "Watson, look up at the sky, and tell me what you see." Watson replied: "I see millions and millions of stars." Holmes said: "And what do you deduce from that?" Watson replied: "Well, if there are millions of stars, and if even a few of those have planets, it’s quite likely there are some planets like Earth out there. And if there are a few planets like Earth out there, there might also be life." And Holmes said:</mutableString>
+                                <string key="text">Sherlock Holmes and Dr Watson were going camping. They pitched their tent under the stars and went to sleep. Sometime in the middle of the night Holmes woke Watson up and said: "Watson, look up at the sky, and tell me what you see." Watson replied: "I see millions and millions of stars." Holmes said: "And what do you deduce from that?" Watson replied: "Well, if there are millions of stars, and if even a few of those have planets, it’s quite likely there are some planets like Earth out there. And if there are a few planets like Earth out there, there might also be life." And Holmes said:</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="DTT-of-vMT"/>
+                                        <exclude reference="Egj-gg-1cO"/>
                                         <exclude reference="ofX-TA-psM"/>
                                         <exclude reference="5wF-I1-rC3"/>
                                         <exclude reference="YVj-CO-KkC"/>
+                                        <exclude reference="fZB-Sk-xdh"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact">
@@ -61,12 +65,21 @@
                                         <include reference="YVj-CO-KkC"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <mask key="constraints">
+                                        <include reference="Egj-gg-1cO"/>
+                                        <include reference="fZB-Sk-xdh"/>
+                                    </mask>
+                                </variation>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="28x-At-Psb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration" identifier="Good Joke"/>
                         <constraints>
+                            <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerX" secondItem="J6G-f3-dYE" secondAttribute="centerX" id="11O-FZ-P1Y"/>
+                            <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerY" secondItem="J6G-f3-dYE" secondAttribute="centerY" id="LLw-A9-P3M"/>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerX" secondItem="J6G-f3-dYE" secondAttribute="centerX" id="SGi-at-sHe"/>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerY" secondItem="J6G-f3-dYE" secondAttribute="centerY" id="Z42-tl-7Ld"/>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerX" secondItem="J6G-f3-dYE" secondAttribute="centerX" id="pfv-tn-ztS"/>
@@ -81,6 +94,8 @@
                                 <exclude reference="pfv-tn-ztS"/>
                                 <exclude reference="Z42-tl-7Ld"/>
                                 <exclude reference="zjd-N1-GT2"/>
+                                <exclude reference="11O-FZ-P1Y"/>
+                                <exclude reference="LLw-A9-P3M"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -113,29 +128,41 @@
                                 <include reference="zjd-N1-GT2"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="MAj-Gq-FHC"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="11O-FZ-P1Y"/>
+                                <include reference="LLw-A9-P3M"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good Joke" id="Jzo-nd-xhW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ff2-UT-bh8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300" y="-361.875"/>
+            <point key="canvasLocation" x="-300" y="-361.93265007320639"/>
         </scene>
         <!--Dad Joke-->
         <scene sceneID="EGT-CA-pup">
             <objects>
                 <viewController storyboardIdentifier="First" title="Dad Joke" id="AgX-T7-jUc" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yR5-cE-Faq">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You guys wanna hear a joke about pizza?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Aj-dp-bl1">
-                                <rect key="frame" x="59.666666666666657" y="456" width="311" height="20"/>
+                                <rect key="frame" x="58.5" y="516" width="693.5" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="way-HZ-8aM">
-                                <rect key="frame" x="354" y="814" width="60" height="35"/>
+                                <rect key="frame" x="734" y="995" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
@@ -164,17 +191,20 @@
             <objects>
                 <viewController storyboardIdentifier="Pun Joke" title="Pun Joke" id="iL1-yt-RIu" customClass="PunJokeController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vDZ-KS-Ot9">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a frog illegally parking?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-d1-1De">
-                                <rect key="frame" x="62" y="455.66666666666669" width="306" height="20.999999999999943"/>
+                                <rect key="frame" x="65.5" y="516" width="679" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nza-zZ-bmE">
-                                <rect key="frame" x="354" y="814" width="60" height="35"/>
+                                <rect key="frame" x="734" y="995" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
@@ -204,18 +234,21 @@
             <objects>
                 <viewController storyboardIdentifier="Good Answer" id="x7f-0Z-e0C" customClass="GoodAnswerController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ku7-Zt-gGI">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;Watson, you idiot, it means that somebody stole our tent.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7i-4V-9G8">
-                                <rect key="frame" x="91" y="401" width="248" height="130"/>
+                                <rect key="frame" x="91" y="362" width="628" height="356"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4E-Kr-SvB">
-                                <rect key="frame" x="354" y="863" width="60" height="35"/>
+                                <rect key="frame" x="734" y="1045" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
@@ -246,17 +279,20 @@
             <objects>
                 <viewController storyboardIdentifier="Second" id="SYI-Ys-FXK" customClass="SecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OXU-cz-nJC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nevermind. It's too cheesy." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObO-2C-cSV">
-                                <rect key="frame" x="112" y="455.66666666666669" width="206" height="20.999999999999943"/>
+                                <rect key="frame" x="178" y="516" width="454" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGN-gP-aL4">
-                                <rect key="frame" x="352" y="863" width="62" height="35"/>
+                                <rect key="frame" x="732" y="1045" width="62" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
                                 <connections>
@@ -284,17 +320,20 @@
             <objects>
                 <viewController storyboardIdentifier="Pun Answer" title="Pun Answer" id="KKk-LN-BdA" customClass="PunAnswerController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EL1-Fz-RnA">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-BC-RpS">
-                                <rect key="frame" x="196" y="455.66666666666669" width="38" height="20.999999999999943"/>
+                                <rect key="frame" x="363.5" y="516" width="83" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgK-4K-EIS">
-                                <rect key="frame" x="353" y="863" width="62" height="35"/>
+                                <rect key="frame" x="733" y="1045" width="62" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
                                 <connections>
@@ -326,7 +365,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2yd-rw-LqB">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="AgX-T7-jUc" kind="relationship" relationship="viewControllers" id="N3J-GE-OVw"/>
