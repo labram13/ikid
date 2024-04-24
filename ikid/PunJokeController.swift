@@ -1,8 +1,16 @@
+//
+//  PunJokeController.swift
+//  ikid
+//
+//  Created by Michaelangelo Labrador on 4/23/24.
+//
+
 import UIKit
 
-class SecondViewController: UIViewController {
+class PunJokeController: UIViewController {
+
     private var currentChildViewController: UIViewController?
-    private var secondViewController: FirstViewController?
+    private var secondViewController: PunAnswerController?
 
    
     
@@ -26,7 +34,7 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        secondViewController = instantiate(id: "First")
+        secondViewController = instantiate(id: "Pun Answer")
     }
 
     @IBAction func switchViews(_ sender: Any) {
@@ -36,8 +44,19 @@ class SecondViewController: UIViewController {
             }, completion: nil)
         }
     }
-    
+
     private func instantiate<T: UIViewController>(id: String) -> T? {
         return storyboard?.instantiateViewController(withIdentifier: id) as? T
     }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
