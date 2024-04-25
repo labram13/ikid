@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rmh-Mh-aVf">
-    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="Good Joke" title="Good Joke" id="xyh-nC-1l8" customClass="GoodJokeController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J6G-f3-dYE">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAj-Gq-FHC">
-                                <rect key="frame" x="60" y="155" width="690" height="770"/>
+                                <rect key="frame" x="51" y="287" width="288" height="270"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="5wF-I1-rC3"/>
@@ -73,16 +73,27 @@
                                     </mask>
                                 </variation>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksQ-1G-RTd">
+                                <rect key="frame" x="310" y="726" width="60" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="xyh-nC-1l8" eventType="touchUpInside" id="GBL-rl-aET"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="28x-At-Psb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration" identifier="Good Joke"/>
                         <constraints>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerX" secondItem="J6G-f3-dYE" secondAttribute="centerX" id="11O-FZ-P1Y"/>
+                            <constraint firstItem="ksQ-1G-RTd" firstAttribute="bottom" secondItem="28x-At-Psb" secondAttribute="bottom" id="7aO-BB-dxN"/>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerY" secondItem="J6G-f3-dYE" secondAttribute="centerY" id="LLw-A9-P3M"/>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerX" secondItem="J6G-f3-dYE" secondAttribute="centerX" id="SGi-at-sHe"/>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerY" secondItem="J6G-f3-dYE" secondAttribute="centerY" id="Z42-tl-7Ld"/>
+                            <constraint firstItem="ksQ-1G-RTd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="28x-At-Psb" secondAttribute="leading" symbolic="YES" id="m9j-yj-lLz"/>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerX" secondItem="J6G-f3-dYE" secondAttribute="centerX" id="pfv-tn-ztS"/>
+                            <constraint firstItem="28x-At-Psb" firstAttribute="trailing" secondItem="ksQ-1G-RTd" secondAttribute="trailing" constant="20" id="u1g-QB-sRp"/>
                             <constraint firstItem="MAj-Gq-FHC" firstAttribute="centerY" secondItem="J6G-f3-dYE" secondAttribute="centerY" id="zjd-N1-GT2"/>
                         </constraints>
                         <variation key="default">
@@ -90,12 +101,12 @@
                                 <exclude reference="MAj-Gq-FHC"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="11O-FZ-P1Y"/>
                                 <exclude reference="SGi-at-sHe"/>
                                 <exclude reference="pfv-tn-ztS"/>
+                                <exclude reference="LLw-A9-P3M"/>
                                 <exclude reference="Z42-tl-7Ld"/>
                                 <exclude reference="zjd-N1-GT2"/>
-                                <exclude reference="11O-FZ-P1Y"/>
-                                <exclude reference="LLw-A9-P3M"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -149,11 +160,11 @@
             <objects>
                 <viewController storyboardIdentifier="First" title="Dad Joke" id="AgX-T7-jUc" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yR5-cE-Faq">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You guys wanna hear a joke about pizza?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Aj-dp-bl1">
-                                <rect key="frame" x="58.5" y="516" width="693.5" height="48"/>
+                                <rect key="frame" x="39.666666666666657" y="412" width="311" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -162,7 +173,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="way-HZ-8aM">
-                                <rect key="frame" x="734" y="995" width="60" height="35"/>
+                                <rect key="frame" x="314" y="726" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
@@ -191,11 +202,11 @@
             <objects>
                 <viewController storyboardIdentifier="Pun Joke" title="Pun Joke" id="iL1-yt-RIu" customClass="PunJokeController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vDZ-KS-Ot9">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a frog illegally parking?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-d1-1De">
-                                <rect key="frame" x="65.5" y="516" width="679" height="48"/>
+                                <rect key="frame" x="42.333333333333343" y="412" width="305.33333333333326" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -204,7 +215,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nza-zZ-bmE">
-                                <rect key="frame" x="734" y="995" width="60" height="35"/>
+                                <rect key="frame" x="314" y="726" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
@@ -234,56 +245,141 @@
             <objects>
                 <viewController storyboardIdentifier="Good Answer" id="x7f-0Z-e0C" customClass="GoodAnswerController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ku7-Zt-gGI">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;Watson, you idiot, it means that somebody stole our tent.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7i-4V-9G8">
-                                <rect key="frame" x="91" y="362" width="628" height="356"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4E-Kr-SvB">
+                                <rect key="frame" x="308" y="775" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="x7f-0Z-e0C" eventType="touchUpInside" id="y8t-fT-uP5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;Watson, you idiot, it means that somebody stole our tent.&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S7i-4V-9G8">
+                                <rect key="frame" x="71" y="394.66666666666669" width="248" height="55"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="GdV-Xs-Zx9"/>
+                                    <constraint firstAttribute="width" constant="532" id="V7w-Lf-efQ"/>
+                                    <constraint firstAttribute="height" constant="55" id="gvc-b6-Sv9"/>
+                                    <constraint firstAttribute="height" constant="119" id="uHR-Np-DUm"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GdV-Xs-Zx9"/>
+                                        <exclude reference="V7w-Lf-efQ"/>
+                                        <exclude reference="gvc-b6-Sv9"/>
+                                        <exclude reference="uHR-Np-DUm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GdV-Xs-Zx9"/>
+                                        <include reference="gvc-b6-Sv9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GdV-Xs-Zx9"/>
+                                        <include reference="gvc-b6-Sv9"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <mask key="constraints">
+                                        <include reference="V7w-Lf-efQ"/>
+                                        <include reference="uHR-Np-DUm"/>
+                                    </mask>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4E-Kr-SvB">
-                                <rect key="frame" x="734" y="1045" width="60" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
-                                <connections>
-                                    <action selector="switchViews:" destination="xyh-nC-1l8" eventType="touchUpInside" id="le6-uz-weu"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ebm-nS-rdz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration" identifier="Good Answer"/>
                         <constraints>
-                            <constraint firstItem="S7i-4V-9G8" firstAttribute="top" secondItem="Ebm-nS-rdz" secondAttribute="top" constant="342" id="0r8-hP-BfE"/>
-                            <constraint firstItem="w4E-Kr-SvB" firstAttribute="bottom" secondItem="Ebm-nS-rdz" secondAttribute="bottom" id="2Xc-Cc-lmL"/>
-                            <constraint firstItem="S7i-4V-9G8" firstAttribute="leading" secondItem="Ebm-nS-rdz" secondAttribute="leading" constant="91" id="2d2-W9-kRv"/>
-                            <constraint firstItem="S7i-4V-9G8" firstAttribute="centerY" secondItem="ku7-Zt-gGI" secondAttribute="centerY" id="3If-KV-A4s"/>
-                            <constraint firstItem="Ebm-nS-rdz" firstAttribute="trailing" secondItem="w4E-Kr-SvB" secondAttribute="trailing" constant="16" id="Eva-mI-MT8"/>
-                            <constraint firstItem="w4E-Kr-SvB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ebm-nS-rdz" secondAttribute="leading" symbolic="YES" id="RdB-d2-ZMX"/>
-                            <constraint firstItem="S7i-4V-9G8" firstAttribute="centerX" secondItem="ku7-Zt-gGI" secondAttribute="centerX" id="gQ0-bn-7t2"/>
+                            <constraint firstItem="S7i-4V-9G8" firstAttribute="centerY" secondItem="ku7-Zt-gGI" secondAttribute="centerY" id="UX9-zE-prk"/>
+                            <constraint firstItem="w4E-Kr-SvB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ebm-nS-rdz" secondAttribute="leading" symbolic="YES" id="XE2-GR-29d"/>
+                            <constraint firstItem="Ebm-nS-rdz" firstAttribute="trailing" secondItem="w4E-Kr-SvB" secondAttribute="trailing" constant="20" id="afo-Gz-8fn"/>
+                            <constraint firstItem="w4E-Kr-SvB" firstAttribute="bottom" secondItem="Ebm-nS-rdz" secondAttribute="bottom" id="b9A-57-tzI"/>
+                            <constraint firstItem="w4E-Kr-SvB" firstAttribute="bottom" secondItem="Ebm-nS-rdz" secondAttribute="bottom" id="bUW-Mw-NEU"/>
+                            <constraint firstItem="S7i-4V-9G8" firstAttribute="centerX" secondItem="ku7-Zt-gGI" secondAttribute="centerX" id="gzd-xU-ZQN"/>
+                            <constraint firstItem="S7i-4V-9G8" firstAttribute="centerX" secondItem="ku7-Zt-gGI" secondAttribute="centerX" id="hCh-5V-S0a"/>
+                            <constraint firstItem="S7i-4V-9G8" firstAttribute="centerY" secondItem="ku7-Zt-gGI" secondAttribute="centerY" id="icz-Kj-h9H"/>
+                            <constraint firstItem="Ebm-nS-rdz" firstAttribute="trailing" secondItem="w4E-Kr-SvB" secondAttribute="trailing" constant="20" id="xth-zz-2SY"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="S7i-4V-9G8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="afo-Gz-8fn"/>
+                                <exclude reference="xth-zz-2SY"/>
+                                <exclude reference="hCh-5V-S0a"/>
+                                <exclude reference="icz-Kj-h9H"/>
+                                <exclude reference="gzd-xU-ZQN"/>
+                                <exclude reference="UX9-zE-prk"/>
+                                <exclude reference="XE2-GR-29d"/>
+                                <exclude reference="b9A-57-tzI"/>
+                                <exclude reference="bUW-Mw-NEU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="S7i-4V-9G8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="xth-zz-2SY"/>
+                                <include reference="hCh-5V-S0a"/>
+                                <include reference="icz-Kj-h9H"/>
+                                <include reference="XE2-GR-29d"/>
+                                <include reference="bUW-Mw-NEU"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="S7i-4V-9G8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="xth-zz-2SY"/>
+                                <include reference="hCh-5V-S0a"/>
+                                <include reference="icz-Kj-h9H"/>
+                                <include reference="XE2-GR-29d"/>
+                                <include reference="bUW-Mw-NEU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="S7i-4V-9G8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="afo-Gz-8fn"/>
+                                <include reference="gzd-xU-ZQN"/>
+                                <include reference="UX9-zE-prk"/>
+                                <include reference="XE2-GR-29d"/>
+                                <include reference="b9A-57-tzI"/>
+                                <include reference="bUW-Mw-NEU"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcC-g2-8uC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-325.95419847328242" y="350.7042253521127"/>
+            <point key="canvasLocation" x="-327.23279648609076" y="348.6328125"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="QWf-WQ-nnh">
             <objects>
                 <viewController storyboardIdentifier="Second" id="SYI-Ys-FXK" customClass="SecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OXU-cz-nJC">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nevermind. It's too cheesy." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObO-2C-cSV">
-                                <rect key="frame" x="178" y="516" width="454" height="48"/>
+                                <rect key="frame" x="92" y="412" width="206" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -292,7 +388,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGN-gP-aL4">
-                                <rect key="frame" x="732" y="1045" width="62" height="35"/>
+                                <rect key="frame" x="312" y="775" width="62" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
                                 <connections>
@@ -320,11 +416,11 @@
             <objects>
                 <viewController storyboardIdentifier="Pun Answer" title="Pun Answer" id="KKk-LN-BdA" customClass="PunAnswerController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EL1-Fz-RnA">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-BC-RpS">
-                                <rect key="frame" x="363.5" y="516" width="83" height="48"/>
+                                <rect key="frame" x="176.33333333333337" y="412" width="37.333333333333314" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -333,7 +429,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgK-4K-EIS">
-                                <rect key="frame" x="733" y="1045" width="62" height="35"/>
+                                <rect key="frame" x="313" y="775" width="62" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
                                 <connections>
